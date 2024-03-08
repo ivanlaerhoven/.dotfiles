@@ -11,6 +11,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Settings for oh-my-zsh python plugin
+export PYTHON_VENV_NAME=".venv"
+export PYTHON_AUTO_VRUN=true
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -77,11 +81,11 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gh docker web-search history macos dirhistory zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git gh docker web-search history macos python dirhistory zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+source "$HOME/.openai_key.zsh"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
