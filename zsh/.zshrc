@@ -115,6 +115,7 @@ alias wtr="curl wttr.in/wormer"
 alias ls="eza"
 alias vim="nvim"
 alias vi="nvim"
+alias cointop="TERM=screen-256color cointop"
 
 eval "$(github-copilot-cli alias -- "$0")"
 
